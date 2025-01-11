@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		96998E4C2D3232D700996609 /* Mockingbird in Frameworks */ = {isa = PBXBuildFile; productRef = 96998E4B2D3232D700996609 /* Mockingbird */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		96DEE3852D2FA60800F54286 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -59,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96998E4C2D3232D700996609 /* Mockingbird in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +140,7 @@
 			);
 			name = "CS342 HW1Tests";
 			packageProductDependencies = (
+				96998E4B2D3232D700996609 /* Mockingbird */,
 			);
 			productName = "CS342 HW1Tests";
 			productReference = 96DEE3842D2FA60800F54286 /* CS342 HW1Tests.xctest */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 96DEE36B2D2FA60700F54286;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				96998E4A2D3232D700996609 /* XCRemoteSwiftPackageReference "mockingbird" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 96DEE3752D2FA60700F54286 /* Products */;
 			projectDirPath = "";
@@ -552,6 +561,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		96998E4A2D3232D700996609 /* XCRemoteSwiftPackageReference "mockingbird" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/typealiased/mockingbird";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.20.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		96998E4B2D3232D700996609 /* Mockingbird */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96998E4A2D3232D700996609 /* XCRemoteSwiftPackageReference "mockingbird" */;
+			productName = Mockingbird;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 96DEE36C2D2FA60700F54286 /* Project object */;
 }

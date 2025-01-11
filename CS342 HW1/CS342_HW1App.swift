@@ -15,3 +15,7 @@ struct CS342_HW1App: App {
         }
     }
 }
+
+
+// TODO: create at least one patient instance, and try using all proprties and methods as part of multiple unit tests.
+// TOOD: add comments? do I have to?

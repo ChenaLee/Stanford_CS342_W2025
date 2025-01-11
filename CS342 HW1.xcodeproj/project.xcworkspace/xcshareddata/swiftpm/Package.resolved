@@ -1,0 +1,15 @@
+{
+  "originHash" : "0484338bf4db72aa883c9c5bfb10ab828238203dc4bf18eb5c76dae58b05e18d",
+  "pins" : [
+    {
+      "identity" : "mockingbird",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/typealiased/mockingbird",
+      "state" : {
+        "revision" : "6e0d473df6b975719e145f6aebf90990c634700e",
+        "version" : "0.20.0"
+      }
+    }
+  ],
+  "version" : 3
+}
