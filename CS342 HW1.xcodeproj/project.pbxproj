@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		96998E4C2D3232D700996609 /* Mockingbird in Frameworks */ = {isa = PBXBuildFile; productRef = 96998E4B2D3232D700996609 /* Mockingbird */; };
+		96998E5D2D3335F700996609 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 96998E5B2D3335F300996609 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		96998E5B2D3335F300996609 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		96DEE3742D2FA60700F54286 /* CS342 HW1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CS342 HW1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96DEE3842D2FA60800F54286 /* CS342 HW1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CS342 HW1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96DEE38E2D2FA60800F54286 /* CS342 HW1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CS342 HW1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +86,7 @@
 				96DEE3872D2FA60800F54286 /* CS342 HW1Tests */,
 				96DEE3912D2FA60800F54286 /* CS342 HW1UITests */,
 				96DEE3752D2FA60700F54286 /* Products */,
+				96998E5B2D3335F300996609 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -221,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96998E5D2D3335F700996609 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
