@@ -5,15 +5,16 @@
 //  Created by Chena Lee on 1/10/25.
 //
 
-enum BloodType {
-    case A_POS
-    case A_NEG
-    case B_POS
-    case B_NEG
-    case O_POS
-    case O_NEG
-    case AB_POS
-    case AB_NEG
+enum BloodType: String, CaseIterable, Identifiable {
+    case A_POS = "A+"
+    case A_NEG = "A-"
+    case B_POS = "B+"
+    case B_NEG = "B-"
+    case O_POS = "O+"
+    case O_NEG = "O-"
+    case AB_POS = "AB+"
+    case AB_NEG = "AB-"
+    var id: BloodType { self }
 }
 
 let RecipientToDonorBloodTypes: [BloodType: [BloodType]] = [

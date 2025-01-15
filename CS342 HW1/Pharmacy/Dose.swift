@@ -6,7 +6,11 @@
 //
 import Foundation
 
-struct Dose {
+struct Dose: Hashable, Equatable {
     public let value: Double;
-    public let unit: Unit; // NICE_TO_HAVE: Might need to create custom unit type that extends Unit, since there are more unit types in medical world than what swift has by default.
+    public let unit: UnitDose;
+    
+    func toString() -> String {
+        return String(value) + unit.rawValue;
+    }
 }

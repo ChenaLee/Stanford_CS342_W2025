@@ -45,7 +45,7 @@ struct PatientTests {
     }
     
     @Test func addPrescriptionFailsWhenDuplicateIsActive() async throws {
-        let patientWithDuplicateActive = Patient(name: anyName2, dateOfBirth: twoYearsAndThirtyDaysAgo, bloodType: BloodType.B_POS, height: anyHeight, weight: anyWeight, prescriptionHistory: [MockPrescriptionDuplicateAlwaysTrueAndActive()])
+        var patientWithDuplicateActive = Patient(name: anyName2, dateOfBirth: twoYearsAndThirtyDaysAgo, bloodType: BloodType.B_POS, height: anyHeight, weight: anyWeight, prescriptionHistory: [MockPrescriptionDuplicateAlwaysTrueAndActive()])
 
         let expectedError = RuntimeError.InvalidInputError("Duplicate prescription is already in your prescription history.")
 
@@ -55,8 +55,8 @@ struct PatientTests {
     }
     
     @Test func addPrescriptionSucceedsWhenNoDuplicateIsActive() async throws {
-        let patientWithNoDuplicateActive = Patient(name: anyName2, dateOfBirth: twoYearsAndThirtyDaysAgo, bloodType: BloodType.B_POS, height: anyHeight, weight: anyWeight, prescriptionHistory: [MockPrescriptionDuplicateAlwaysTrueAndInactive()])
-        let patientWithNoDuplicate = Patient(name: anyName2, dateOfBirth: twoYearsAndThirtyDaysAgo, bloodType: BloodType.B_POS, height: anyHeight, weight: anyWeight, prescriptionHistory: [MockPrescriptionDuplicateAlwaysFalse()])
+        var patientWithNoDuplicateActive = Patient(name: anyName2, dateOfBirth: twoYearsAndThirtyDaysAgo, bloodType: BloodType.B_POS, height: anyHeight, weight: anyWeight, prescriptionHistory: [MockPrescriptionDuplicateAlwaysTrueAndInactive()])
+        var patientWithNoDuplicate = Patient(name: anyName2, dateOfBirth: twoYearsAndThirtyDaysAgo, bloodType: BloodType.B_POS, height: anyHeight, weight: anyWeight, prescriptionHistory: [MockPrescriptionDuplicateAlwaysFalse()])
 
         do {
             try patientWithNoDuplicateActive.addPrescription(newPrescription: MockPrescription())

@@ -8,8 +8,8 @@
 @testable import CS342_HW1
 import Foundation
 
-let anyDose1 = Dose(value: 1, unit: UnitMass.milligrams)
-let anyDose2 = Dose(value: 2, unit: UnitMass.milligrams)
+let anyDose1 = Dose(value: 1, unit: UnitDose.Milligram)
+let anyDose2 = Dose(value: 2, unit: UnitDose.Milligram)
 let anyFrequency = Frequency(value: 1, cycle: Duration.seconds(3600))
 
 let dayInSeconds = 3600*24

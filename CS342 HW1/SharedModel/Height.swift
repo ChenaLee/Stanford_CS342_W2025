@@ -6,7 +6,16 @@
 //
 import Foundation
 
-struct Height {
+class Height {
     let value: Double;
     let unit: UnitLength;
+    
+    init(value: Double, unit: UnitLength) {
+        self.value = value
+        self.unit = unit
+    }
+    
+    func toString() -> String {
+        return String(value) + " " + unit.symbol
+    }
 }

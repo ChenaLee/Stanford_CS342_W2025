@@ -6,7 +6,16 @@
 //
 import Foundation
 
-struct Weight {
+class Weight {
     let value: Double;
     let unit: UnitMass;
+    
+    init(value: Double, unit: UnitMass) {
+        self.value = value
+        self.unit = unit
+    }
+    
+    func toString() -> String {
+        return String(value) + " " + unit.symbol
+    }
 }

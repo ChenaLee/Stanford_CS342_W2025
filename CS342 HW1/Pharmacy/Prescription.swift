@@ -6,7 +6,7 @@
 //
 import Foundation
 
-class Prescription : Equatable {
+class Prescription : Equatable, Hashable {
     let medication: Medication;
     let datePrescribed: Date;
     let frequency: Frequency;
@@ -29,8 +29,19 @@ class Prescription : Equatable {
         return Calendar.current.compare(expectedEndDate!, to: Date(), toGranularity: .day)
             == .orderedDescending
     }
+
+    func toShortString() -> String {
+        return medication.toString();
+    }
     
     static func == (one: Prescription, other: Prescription) -> Bool {
         return one === other //For now.
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(medication)
+        hasher.combine(datePrescribed)
+        hasher.combine(frequency)
+        hasher.combine(duration)
     }
 }
